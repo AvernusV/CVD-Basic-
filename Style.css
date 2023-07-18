@@ -130,6 +130,9 @@ img {
     background:#2b2b2b;
     padding:1rem 0;
     position:relative;
+    position:fixed;
+    width:100%;
+  
 }
 .header .branding {
     display:flex;
@@ -150,7 +153,6 @@ img {
 }
 .header .branding h3 span{
     color:#ffa700;
-    border-bottom:.2em solid #ff8c00;
 
 }
 /*-------------------NAVIGATION-----------------------*/
@@ -206,19 +208,35 @@ img {
     background-color:#ffa700;
     display:block;
     border-radius:5rem; 
+    transition:.5s ease;
 }
 .header .toggle__menu span:nth-child(2){
-    margin:.5rem 0; 
+    margin:.3rem 0; 
 }
-
+.header .header__nav.open{
+  right:0rem;
+  transition:.3s ease;
+}
+.header .toggle__menu.open span:first-child{
+ transform: translateY(10px) rotate(225deg);
+ transition:.3s ease;
+}
+.header .toggle__menu.open span:nth-child(2){
+ opacity:0;
+ transition:.3s ease;
+}
+.header .toggle__menu.open span:last-child{
+ transform: translateY(-1px) rotate(-225deg);
+}
  @media screen and (max-width: 500px){
     .header .header__nav{
     position:absolute;
     background:#434242;
     top:10rem;
-    right:0;
+    right:-100rem;
     width:100%;
     height:100vh;
+    transition:.3s ease;
  }
  .header .header__nav ul{
     flex-direction:column;
@@ -237,6 +255,9 @@ img {
  .header .header__nav ul li:hover a:after{
     width:0%;
  }
+ header .header__nav ul li:hover {
+  background:gray;
+}
 
  .header .toggle__menu{
     display:block;
