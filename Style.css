@@ -424,7 +424,7 @@ img {
 
 .advert .advert__item h4{
   color:#2b2b2b;
-  git init
+  font-weight:800;
   font-size:3rem;
 }
 .advert .advert__item p{
