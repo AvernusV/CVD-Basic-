@@ -144,17 +144,29 @@ img {
     width:5rem;
 
 }
+.header .branding h3:hover{
+  color:#ffa700;
+  font-size:2.5rem;
+  font-weight:600;
+  transition:.3s ease;
 
+}
 .header .branding h3{
     color:#ffffff;
     font-size:2.5rem;
     font-weight:600;
 
 }
+.header .branding h3:hover span{
+  color:#ffffff;
+  transition:.3s ease;
+}
 .header .branding h3 span{
     color:#ffa700;
 
 }
+
+
 /*-------------------NAVIGATION-----------------------*/
 .header .header__nav ul{
     display:flex;
@@ -262,4 +274,201 @@ img {
  .header .toggle__menu{
     display:block;
  }
+}
+/*--------------BANNER--------------*/
+.banner{
+  background:#ffffff;
+  padding-top:13rem;
+  padding-bottom:5rem;  
+}
+.banner .banner__wrapper{
+  display:grid;
+  grid-template-columns:2fr 2fr;
+  align-items:center;
+}
+.banner .banner__text h1:hover{
+  font-size:10rem;
+  font-weight:800;
+  color:#2b2b2b;
+  line-height:1.2;
+  transition:.3s ease;
+}
+.banner .banner__text h1{
+  font-size:10rem;
+  font-weight:800;
+  color:#ffa700;
+  line-height:1.2;
+}
+.banner .banner__text p{
+  margin:5rem 0;
+  max-width:45rem;
+  text-align:justify;
+}
+@media screen and (max-width:500px){
+  .banner .banner__wrapper{
+    display:grid;
+    grid-template-columns: 1fr;
+  }
+  .banner .banner__text{
+    order:2;
+    text-align:center;
+    margin:0 2rem;
+    margin-top:3rem;
+  }
+  .banner .banner__wrapper img{
+    width:20rem;
+    margin:0 auto;
+  } 
+  .banner .banner__text h1:hover{
+    font-size:3rem;
+    transition:.3s ease;
+  }   
+  .banner .banner__text h1{
+    font-size:3rem;
+  }  
+  .banner .banner__text p{
+    margin-top:2rem;
+    margin-bottom:5rem;
+  }  
+}
+
+/*--------------HM SERVICES--------------*/
+.hm-services{
+  padding:5rem 0;
+  background:#2b2b2b;  
+}
+.hm-services .hm-services__item i{
+  color:#ffa700;
+  font-size:6rem; 
+}
+.hm-services .hm-services__item h4{
+  color:#ffa700;
+}
+.hm-services .hm-services__item p{
+  color:#ffffff;
+  text-align:justify;
+
+}
+/*--------------HOME ABOUT--------------*/
+.hm-about{
+  background:#ffffff;
+  padding-top:5rem;
+  padding-bottom:5rem; 
+}
+.hm-about .hm-about__wrapper img{
+  height:60rem;
+  width:60rem;
+}
+.hm-about .hm-about__wrapper{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.hm-about .hm-about__text h3:hover{
+  font-size:2.5rem;
+  font-weight:800;
+  color:#2b2b2b;
+  line-height:1.2;
+  transition:.3s ease;
+}
+.hm-about .hm-about__text{
+  max-width:75rem;
+}
+.hm-about .hm-about__text h3{
+  font-size:2.5rem;
+  font-weight:800;
+  color:#ffa700;
+  line-height:1.2;
+}
+.hm-about .hm-about__text p{
+  margin:1.5rem 0rem;
+  max-width:75rem; 
+  text-align:justify;
+}
+
+@media screen and (max-width:500px){
+  .hm-about .hm-about__wrapper{
+    display:grid;
+    grid-template-columns: 1fr;
+  }
+  .hm-about .hm-about__text{
+    order:2;
+    text-align:center;
+    margin:0 2rem;
+    margin-top:3rem;
+  }
+  .hm-about .hm-about__wrapper img{
+    width:20rem;
+    height:20rem;
+    margin:0 auto;
+  } 
+  .hm-about .hm-about__text h3:hover{
+    font-size:3rem;
+    transition:.3s ease;
+  }   
+  .hm-about .hm-about__text h3{
+    font-size:2.5rem;
+  }  
+  .hm-about .hm-about__text p{
+    margin-top:2rem;
+    margin-bottom:5rem;
+  }  
+
+/*--------------CONTACT US YELLOW--------------*/
+}
+.advert{
+  padding:5rem 0;
+  background:#ffa700;  
+  text-align:center;
+}
+
+.advert .advert__item h4{
+  color:#2b2b2b;
+  git init
+  font-size:3rem;
+}
+.advert .advert__item p{
+  color:#2b2b2b;
+  text-align:center;
+  margin-top:.5rem;
+  margin-bottom:3rem;
+}
+@media screen and (max-width:500px){
+  .advert .advert__wrapper{
+    font-size:1rem;
+    display:grid;
+    grid-template-columns: 1fr;
+  }
+  .advert .adcvert_item h4{
+    font-size:1rem;
+    font-weight:800;
+  }
+}
+/*--------------REPEATABLE PATTERNS--------------*/
+.btn{
+  display:inline-block;
+  padding:1.5rem 1.5rem;
+  border-radius:5rem;
+  border:1px solid transparent;
+}
+.btn.yellow{
+  background:#ffa700;
+  color:#ffffff;
+}
+.btn.yellow:hover{
+  background:#2b2b2b;
+  border:1px solid #ffa700;
+  color:#ffa700;
+  transition:.3s ease;
+}
+
+.btn.dark{
+  background:#2b2b2b;
+  color:#ffffff;
+}
+.btn.dark:hover{
+  background:#ffa700;
+  border:1px solid #2b2b2b;
+  color:#2b2b2b;
+  transition:.3s ease;
 }
