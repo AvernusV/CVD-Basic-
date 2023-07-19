@@ -584,6 +584,66 @@ transform:scale(1.1);
     gap:1rem;
   }
 }
+
+/*--------------UPDATES PAGE--------------*/
+.updates{
+  background:ffffff;
+  padding-top:13rem;
+  padding-bottom:5rem;
+}
+.updates .updates__title h1{
+  font-size:5rem;
+  color:#ffa700;
+  font-weight:600;
+}
+.updates .updates__wrapper{
+  display:grid;
+  grid-template-columns:2.5fr 1.5fr;
+  grid-gap:5rem;
+  margin-top:10rem;
+}
+.updates .updates__left{
+
+}
+.updates .updates__left__item img{
+  width:100%;
+}
+.updates .updates__left__item ul{
+  display:flex;
+  align-items:center;
+  gap:5rem;
+  margin:1rem 0;
+}
+.updates .updates__left__item ul li{
+  display:flex;
+  align-items:center;
+  gap:1rem;
+}
+.updates .updates__left__item:first-child{
+  padding-bottom:5rem;
+  border-bottom:1px solid grey;
+}
+.updates .updates__left__item:not(:first-child,:last-child){
+  padding:5rem 0;
+  border-bottom:1px solid grey;
+}
+.updates .updates__left__item:last-child{
+  padding:5rem 0;
+  border-bottom:1px solid grey;
+}
+.updates .updates__left__item__text h2{
+  color:#ffa700;
+  font-size:2.5rem;
+  font-weight:600;
+}
+.updates .updates__left__item__text p{ 
+  margin:3rem 0;
+  text-align:justify;
+}
+.updates .updates__left__item__text a{
+  color:#ffa700;
+}
+
 /*--------------REPEATABLE PATTERNS--------------*/
 .btn{
   display:inline-block;
